@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:Config/etc/system_file.xsd">
+    <system>
+        <tab id="example" translate="label" sortOrder="10">
+            <label>My Custom Tab</label>
+        </tab>
+        <section id="example_section" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Section Label</label>
+            <tab>example</tab>
+            <resource>YourCustomName_ModuleName::example_config</resource>
+            <group id="example_group" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Group Label</label>
+                <field id="example_field_1" translate="label comment" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Example Field 1</label>
+                </field>
+                <field id="example_field_2" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Example Field 1</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,27 @@
+{
+    "name": "magecode/OrdersWebhooks",
+    "description": "N/A",
+    "type": "magento2-module",
+    "version": "2.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "~5.6.0|~7.0.0|~7.1.0"
+    },
+    "authors": [
+        {
+            "name": "Anton Shelyganov",
+            "email": "antonshell@yandex.ru"
+        }
+    ],
+    "extra": {
+        "map": [
+            [
+                "*",
+                "MageCode/The9Round"
+            ]
+        ]
+    }
+}
