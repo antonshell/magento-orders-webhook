@@ -2,8 +2,9 @@
 namespace Antonshell\OrdersWebhooks\Setup;
 
 use Antonshell\OrdersWebhooks\Helpers\WebhookHelper;
+use Magento\Framework\Setup\UpgradeSchemaInterface;
 
-class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
+class UpgradeSchema implements UpgradeSchemaInterface
 {
     /**
      * install tables
@@ -13,7 +14,7 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
      * @return void
      * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
      */
-    public function install(\Magento\Framework\Setup\SchemaSetupInterface $setup, \Magento\Framework\Setup\ModuleContextInterface $context)
+    public function upgrade(\Magento\Framework\Setup\SchemaSetupInterface $setup, \Magento\Framework\Setup\ModuleContextInterface $context)
     {
         $installer = $setup;
         $installer->startSetup();
@@ -42,13 +43,6 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
                     255,
                     [],
                     'Event'
-                )
-                ->addColumn(
-                    'status',
-                    \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
-                    null,
-                    [],
-                    'Webhook Status'
                 )
                 ->addColumn(
                     'order_id',

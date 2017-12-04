@@ -1,5 +1,5 @@
 {
-    "name": "magecode/OrdersWebhooks",
+    "name": "Antonshell/OrdersWebhooks",
     "description": "N/A",
     "type": "magento2-module",
     "version": "2.0.0",
@@ -20,7 +20,7 @@
         "map": [
             [
                 "*",
-                "MageCode/The9Round"
+                "Antonshell/The9Round"
             ]
         ]
     }
